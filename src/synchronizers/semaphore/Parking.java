@@ -2,6 +2,14 @@ package synchronizers.semaphore;
 
 import java.util.concurrent.Semaphore;
 
+/**
+ * Рассмотрим следующий пример.
+ * Существует парковка, которая одновременно может вмещать не более 5 автомобилей.
+ * Если парковка заполнена полностью, то вновь прибывший автомобиль должен подождать пока не освободится хотя бы одно место.
+ * После этого он сможет припарковаться.
+ */
+
+
 public class Parking {
     //Парковочное место занято - true, свободно - false
     private static final boolean[] PARKING_PLACES = new boolean[5];
